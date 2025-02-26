@@ -1,0 +1,12 @@
+{
+	"map_name": "Borg's Resolve Station",
+	"map_link": "borgsresolvestation",
+	"map_path": "map_files/BorgsResolveStation",
+	"map_file": "BorgsResolveStation.dmm",
+	"shuttles": {
+		"cargo": "cargo_box",
+		"ferry": "ferry_standard",
+		"whiteship": "whiteship_box",
+		"emergency": "emergency_box"
+	}
+}
