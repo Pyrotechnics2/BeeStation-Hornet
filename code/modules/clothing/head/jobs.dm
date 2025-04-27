@@ -102,7 +102,6 @@
 	icon_state = "detective"
 	item_state = "det_hat"
 	var/candy_cooldown = 0
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/small/detective
 	dog_fashion = /datum/dog_fashion/head/detective
 
 
@@ -118,6 +117,9 @@
 
 /obj/item/clothing/head/fedora/det_hat/Initialize(mapload)
 	. = ..()
+
+	create_storage(storage_type = /datum/storage/pockets/small/fedora/detective)
+
 	new /obj/item/reagent_containers/cup/glass/flask/det(src)
 
 /obj/item/clothing/head/fedora/det_hat/examine(mob/user)
@@ -271,6 +273,10 @@
 	strip_delay = 60
 	dog_fashion = /datum/dog_fashion/head/warden
 
+/obj/item/clothing/head/hats/warden/red
+	name = "warden's hat"
+	desc = "A warden's red hat. Looking at it gives you the feeling of wanting to keep people in cells for as long as possible."
+	icon_state = "wardenhat"
 
 /datum/armor/hats_warden
 	melee = 40
